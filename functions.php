@@ -25,6 +25,13 @@ if ( function_exists( 'register_nav_menus' ) ) {
 	) );
 }
 
+class Dropdown_Walker_Nav_Menu extends Walker_Nav_Menu {
+  function start_lvl(&$output, $depth) {
+    $indent = str_repeat("\t", $depth);
+    $output .= "\n$indent<ul class=\"dropdown-menu\">\n";
+  }
+}
+
 function is_tree($pid) {
 	global $post;
 	if(is_page()&&($post->post_parent==$pid||is_page($pid))) 

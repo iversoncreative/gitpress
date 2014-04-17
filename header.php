@@ -33,14 +33,18 @@
 					<a class="navbar-brand" href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a>
 				</div>
 				<div class="navbar-collapse collapse" id="nav-main">
-					<?php wp_nav_menu( array(
-						'menu' => '2',
-						'container' => false, 
-						'menu_id' => 'nav',
-						'menu_class' => 'nav navbar-nav navbar-right',
-						'theme_location' => 'primary',
-						'fallback_cb' => 'wp_page_menu' )
-					); ?>
+					<?php
+						$nav = array(
+							'theme_location' => 'Main Menu',
+							'menu' => 'Main Menu',
+							'container' => false,
+							'menu_class' => 'nav navbar-nav navbar-right',
+							'menu_id' => 'nav-main',
+							'fallback_cb' => 'wp_page_menu',
+							'walker' => new Dropdown_Walker_Nav_Menu()
+						);
+						wp_nav_menu( $nav );
+					?>
 				</div>
 			</div>
 		</nav>
