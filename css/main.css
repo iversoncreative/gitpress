@@ -46,6 +46,21 @@
 			.navbar-inverse .navbar-toggle:active {
 				color: #FFF;
 			}
+			.navbar-inverse .navbar-nav > li > a:hover,
+			.navbar-inverse .navbar-nav > li > a:focus,
+			.navbar-inverse .navbar-nav > li.current-menu-item > a,
+			.navbar-inverse .navbar-nav > li.current-menu-parent > a,
+			.navbar-inverse .navbar-nav > li.current-menu-ancestor > a,
+			.navbar-inverse .navbar-nav > li.current-page-parent > a,
+			.navbar-inverse .navbar-nav > li.current-page-ancestor > a,
+			.home .navbar-inverse .navbar-nav > li.current-menu-item > a:hover,
+			.home .navbar-inverse .navbar-nav > li.current-menu-item > a:focus,
+			.navbar-inverse .navbar-nav > .open > a,
+			.navbar-inverse .navbar-nav > .open > a:hover,
+			.navbar-inverse .navbar-nav > .open > a:focus {
+				background: none transparent;
+				color: #FFF;
+			}
 
 	/* BREADCRUMBS */
 	.breadcrumb {
