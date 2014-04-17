@@ -9,6 +9,7 @@
 		<div class="page-header"><h1><?php the_title(); ?></h1></div>
 		<div class="row">
 			<main class="col-sm-8" id="primary">
+				<?php if ( has_post_thumbnail() ) { ?><div class="thumbnail"><?php the_post_thumbnail('large-thumbnail'); ?></div><?php } ?>
 				<div class="page-content"><?php the_content(); ?></div>
 			</main>
 			<aside class="col-sm-4" id="secondary">
