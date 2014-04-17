@@ -17,6 +17,7 @@
 				<div class="wrapper-post" id="post-<?php the_ID(); ?>">
 					<h2><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 					<p class="text-muted"><small><?php the_time('F j, Y'); ?> by <?php the_author(); ?></small></p>
+					<?php if ( has_post_thumbnail() ) { ?><div class="thumbnail"><?php the_post_thumbnail('large-thumbnail'); ?></div><?php } ?>
 					<div class="post-content"><?php the_content(); ?></div>
 					<p class="text-muted"><small class="post-meta">Category: <?php the_category(', '); ?><?php the_tags(__(' | Tags: '), ', '); ?> | <?php comments_popup_link(__('Comments (0)'), __('Comments (1)'), __('Comments (%)')); ?><?php edit_post_link(__('Edit'), ' | '); ?></small></p>
 					<hr />
