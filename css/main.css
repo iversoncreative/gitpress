@@ -39,6 +39,13 @@
 		.navbar-toggle {
 			padding: 6px 10px;
 		}
+		.navbar-inverse .navbar-toggle {
+			color: #999;
+		}
+			.navbar-inverse .navbar-toggle:hover,
+			.navbar-inverse .navbar-toggle:active {
+				color: #FFF;
+			}
 
 	/* BREADCRUMBS */
 	.breadcrumb {
