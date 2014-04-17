@@ -271,8 +271,8 @@ function my_login_logo() { ?>
 			background-image: url(<?php echo get_bloginfo( 'template_directory' ) ?>/img/login-logo.png);
 			padding-bottom: 10px;
 			width: 320px;
-			height: 100px;
-			background-size: 320px 100px;
+			height: 150px;
+			background-size: 320px 150px;
 		}
 	</style>
 <?php }
