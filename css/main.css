@@ -87,3 +87,10 @@
 	.wrapper-post > h2 {
 		margin-top: 0px;
 	}
+
+	@media (max-width: 679px) {
+		.page-header h1 {
+			font-size: 40px;
+			line-height: 40px;
+		}
+	}
