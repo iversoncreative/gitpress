@@ -7,9 +7,9 @@ if ( function_exists('register_sidebar') )
 {
   register_sidebar(array(
   	'name' => 'Sidebar',
-    'before_widget' => '<div id="%1$s" class="panel panel-default widget %2$s">',
+    'before_widget' => '<div id="%1$s" class="panel panel-default widget %2$s"><div class="panel-heading">',
     'after_widget' => '</div></div>',
-    'before_title' => '<div class="panel-heading"><h3 class="panel-title">',
+    'before_title' => '<h3 class="panel-title">',
     'after_title' => '</h3></div><div class="panel-body">',
   ));
 }
